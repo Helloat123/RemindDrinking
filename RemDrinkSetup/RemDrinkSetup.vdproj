@@ -15,6 +15,18 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_0255735B34DE48508ED4586237B289B7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_02D3DE60A640466BBDCF5FB747E6CC60"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_1982FF68C56B4176A71EE69293533429"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -39,12 +51,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_3A473880D70E4B70B0A27DCD30B4887E"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_4DD78DCE5F930F240BF9952E54166CD2"
         "OwnerKey" = "8:_738F300A78D548E18643E5CBC9959578"
         "MsmSig" = "8:_UNDEFINED"
@@ -52,7 +58,19 @@
         "Entry"
         {
         "MsmKey" = "8:_4DD78DCE5F930F240BF9952E54166CD2"
-        "OwnerKey" = "8:_CC7852CFB6F345E8BFBA5584BB1F5580"
+        "OwnerKey" = "8:_0255735B34DE48508ED4586237B289B7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4E16639E711C4DA59730B9AB77118BEC"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_586A2FA70FD740CB9ED6C06A442F59C3"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -64,6 +82,12 @@
         "Entry"
         {
         "MsmKey" = "8:_69148E0144B64FA584F3929EF0CBE9D9"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7095B2A84AE6469191454E45102295CE"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -81,7 +105,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_829B7B1E0A2642469D1CC2EF49323CCB"
+        "MsmKey" = "8:_74FB6F5B5E8743E5B694E560A59376D3"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -129,25 +153,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C64229CA57E94AA1BB0166F19C694C08"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_CC7852CFB6F345E8BFBA5584BB1F5580"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_DCF4AF6487A240D9B0353B254154E9AE"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_DF04505C90514A0DAC7926A4F7B35DF0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -184,7 +190,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CC7852CFB6F345E8BFBA5584BB1F5580"
+        "OwnerKey" = "8:_0255735B34DE48508ED4586237B289B7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7095B2A84AE6469191454E45102295CE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -286,7 +298,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:v4.6.1"
+                "FrameworkVersion" = "8:v4.6.1 "
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=671728"
                 }
@@ -294,6 +306,57 @@
         }
         "File"
         {
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0255735B34DE48508ED4586237B289B7"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:RemindDrinking, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_0255735B34DE48508ED4586237B289B7"
+                    {
+                    "Name" = "8:RemindDrinking.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\RemindDrinking\\bin\\Release\\RemindDrinking.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_02D3DE60A640466BBDCF5FB747E6CC60"
+            {
+            "SourcePath" = "8:..\\packages\\FluentScheduler.5.3.0\\lib\\net40\\FluentScheduler.pdb"
+            "TargetName" = "8:FluentScheduler.pdb"
+            "Tag" = "8:"
+            "Folder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1982FF68C56B4176A71EE69293533429"
             {
             "SourcePath" = "8:..\\RemindDrinking\\image\\1.jpg"
@@ -385,26 +448,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3A473880D70E4B70B0A27DCD30B4887E"
-            {
-            "SourcePath" = "8:..\\RemindDrinking\\bin\\Debug\\RemindDrinking.pdb"
-            "TargetName" = "8:RemindDrinking.pdb"
-            "Tag" = "8:"
-            "Folder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4DD78DCE5F930F240BF9952E54166CD2"
             {
             "AssemblyRegister" = "3:1"
@@ -434,6 +477,46 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4E16639E711C4DA59730B9AB77118BEC"
+            {
+            "SourcePath" = "8:..\\packages\\FluentScheduler.5.3.0\\lib\\net40\\FluentScheduler.xml"
+            "TargetName" = "8:FluentScheduler.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_586A2FA70FD740CB9ED6C06A442F59C3"
+            {
+            "SourcePath" = "8:..\\RemindDrinking\\bin\\Release\\RemindDrinking.exe.config"
+            "TargetName" = "8:RemindDrinking.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5D9B324A3B154537BACC877EE2FC1975"
@@ -476,6 +559,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7095B2A84AE6469191454E45102295CE"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:FluentScheduler, Version=5.3.0.0, Culture=neutral, PublicKeyToken=b76503528a14ebd1, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_7095B2A84AE6469191454E45102295CE"
+                    {
+                    "Name" = "8:FluentScheduler.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\packages\\FluentScheduler.5.3.0\\lib\\net40\\FluentScheduler.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_74D29E796F6C45089F7587D425D16026"
             {
             "SourcePath" = "8:..\\RemindDrinking\\image\\12.jpg"
@@ -496,10 +610,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_829B7B1E0A2642469D1CC2EF49323CCB"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_74FB6F5B5E8743E5B694E560A59376D3"
             {
-            "SourcePath" = "8:..\\RemindDrinking\\bin\\Debug\\FluentScheduler.pdb"
-            "TargetName" = "8:FluentScheduler.pdb"
+            "SourcePath" = "8:..\\RemindDrinking\\bin\\Release\\RemindDrinking.pdb"
+            "TargetName" = "8:RemindDrinking.pdb"
             "Tag" = "8:"
             "Folder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
             "Condition" = "8:"
@@ -656,81 +770,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C64229CA57E94AA1BB0166F19C694C08"
-            {
-            "SourcePath" = "8:..\\RemindDrinking\\bin\\Debug\\FluentScheduler.xml"
-            "TargetName" = "8:FluentScheduler.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CC7852CFB6F345E8BFBA5584BB1F5580"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:RemindDrinking, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_CC7852CFB6F345E8BFBA5584BB1F5580"
-                    {
-                    "Name" = "8:RemindDrinking.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\RemindDrinking\\bin\\Debug\\RemindDrinking.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DCF4AF6487A240D9B0353B254154E9AE"
             {
             "SourcePath" = "8:C:\\Windows\\System32\\msiexec.exe"
             "TargetName" = "8:msiexec.exe"
-            "Tag" = "8:"
-            "Folder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DF04505C90514A0DAC7926A4F7B35DF0"
-            {
-            "SourcePath" = "8:..\\RemindDrinking\\bin\\Debug\\RemindDrinking.exe.config"
-            "TargetName" = "8:RemindDrinking.exe.config"
             "Tag" = "8:"
             "Folder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
             "Condition" = "8:"
@@ -917,7 +960,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:RemindDrinking"
         "ProductCode" = "8:{E99A3851-7C1F-48F2-8571-38F97441D141}"
-        "PackageCode" = "8:{9BA52119-45DB-474E-BE00-9489C90A6E5E}"
+        "PackageCode" = "8:{50AE14F2-8F88-48AF-98FE-D22DAA220CE6}"
         "UpgradeCode" = "8:{874C0E1A-E68E-4C61-B472-23D51C0B2273}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1045,7 +1088,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_CC7852CFB6F345E8BFBA5584BB1F5580"
+            "Target" = "8:_0255735B34DE48508ED4586237B289B7"
             "Folder" = "8:_7B1ED4C6F86C41EF82622C9D6D1C768D"
             "WorkingFolder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
             "Icon" = "8:_A6521FF4CA744E65B076D23E6E5C463A"
@@ -1059,7 +1102,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_CC7852CFB6F345E8BFBA5584BB1F5580"
+            "Target" = "8:_0255735B34DE48508ED4586237B289B7"
             "Folder" = "8:_0548B620C5474C3080AEBCA83632EEFD"
             "WorkingFolder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
             "Icon" = "8:_A6521FF4CA744E65B076D23E6E5C463A"
@@ -1087,7 +1130,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_CC7852CFB6F345E8BFBA5584BB1F5580"
+            "Target" = "8:_0255735B34DE48508ED4586237B289B7"
             "Folder" = "8:_97FE33C29E2940E9BF2A83AA5732240E"
             "WorkingFolder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
             "Icon" = "8:_A6521FF4CA744E65B076D23E6E5C463A"
@@ -1508,7 +1551,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_738F300A78D548E18643E5CBC9959578"
             {
-            "SourcePath" = "8:..\\RemindDrinking\\obj\\Debug\\RemindDrinking.exe"
+            "SourcePath" = "8:..\\RemindDrinking\\obj\\Release\\RemindDrinking.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_25539BF463AB44E1B9488B26C7B00BC8"
