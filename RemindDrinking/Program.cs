@@ -20,13 +20,16 @@ namespace RemindDrinking
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
+                //读取设置文件
+                readsetting p= new readsetting();
+                p.ReadSettings();
                 //注册定时任务
-                JobManager.Initialize(new SystemTipsScheduler());
+                JobManager.Initialize(new SystemTipsScheduler(p));
                 Application.Run(new MainForm());
             }
             else
             {
-                MessageBox.Show("小助手正在运行中!", "喝水提醒小助手", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Running", "DrinkingReminder", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

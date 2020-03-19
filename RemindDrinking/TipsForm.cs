@@ -15,7 +15,7 @@ namespace RemindDrinking
     public partial class TipsForm : Form
     {
         //图片的所在目录
-        private String exePath = Application.StartupPath + @"\image\";
+        private String imgPath = Application.StartupPath + @"\image\";
         //显示文字模式
         private int showMod;
         private int index; //关闭提示窗体计数器
@@ -38,51 +38,54 @@ namespace RemindDrinking
             this.LabMsg.Location = new System.Drawing.Point(LabXPoint, LabYPoint);
 
             //获取 image文件夹下的文件名列表
-            List<string> imgFile = GetBcakImage();
+            List<string> imgFile = GetImage();
             //随机拿到一个图片
             string imgName = imgFile[rd.Next(imgFile.Count)];
-            this.BackgroundImage = Image.FromFile(exePath + imgName);
+            this.Enabled = false;
+            this.BackgroundImage = Image.FromFile(imgPath + imgName);
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Enabled = true;
 
-            switch (showMod)
-            {
-                case 1:
-                    LabMsg.Text = "9:00  用最美的心情来迎接朝阳和第一杯水！";
-                    break;
-                case 2:
-                    LabMsg.Text = "10:00  小公主~ 要记得喝水哦！";
-                    break;
-                case 3:
-                    LabMsg.Text = "11:00  科学研究表明，此时喝水有助于瘦身！";
-                    break;
-                case 4:
-                    LabMsg.Text = "12:00  吃完饭，喝杯水，休息一会！";
-                    break;
-                case 5:
-                    LabMsg.Text = "14:00  喝最大杯的水，做最靓的仔！";
-                    break;
-                case 6:
-                    LabMsg.Text = "15:00  娘娘，喝水的时间到了！";
-                    break;
-                case 7:
-                    LabMsg.Text = "16:00  菇凉，喝口水吧！";
-                    break;
-                case 8:
-                    LabMsg.Text = "17:00  注意，再喝一杯水，马上要下班了！";
-                    break;
-                default:
-                    break;
-            }
+            LabMsg.Text = "喝水";
+            //switch (showMod)
+            //{  
+                //case 1:
+                //    LabMsg.Text = "9:00  用最美的心情来迎接朝阳和第一杯水！";
+                //    break;
+                //case 2:
+                //    LabMsg.Text = "10:00  小公主~ 要记得喝水哦！";
+                //    break;
+                //case 3:
+                //    LabMsg.Text = "11:00  科学研究表明，此时喝水有助于瘦身！";
+                //    break;
+                //case 4:
+                //    LabMsg.Text = "12:00  吃完饭，喝杯水，休息一会！";
+                //    break;
+                //case 5:
+                //    LabMsg.Text = "14:00  喝最大杯的水，做最靓的仔！";
+                //    break;
+                //case 6:
+                //    LabMsg.Text = "15:00  娘娘，喝水的时间到了！";
+                //    break;
+                //case 7:
+                //    LabMsg.Text = "16:00  菇凉，喝口水吧！";
+                //    break;
+                //case 8:
+                //    LabMsg.Text = "17:00  注意，再喝一杯水，马上要下班了！";
+                //    break;
+                //default:
+                //    break;
+            //}
         }
 
         /// <summary>
         /// 获取image目录下文件名集合
         /// </summary>
         /// <returns></returns>
-        private List<string> GetBcakImage()
+        private List<string> GetImage()
         {
-            //相对路径，和程序exe同目录下
-            DirectoryInfo dir = new DirectoryInfo(exePath);
+            //相对路径，image文件夹内
+            DirectoryInfo dir = new DirectoryInfo(imgPath);
 
             FileInfo[] fileInfo = dir.GetFiles();
             List<string> fileNames = new List<string>();
@@ -101,7 +104,7 @@ namespace RemindDrinking
         private void TmrBackHome_Tick(object sender, EventArgs e)
         {
             index++;
-            if (index > 30)
+            if (index > 20)
             {
                 this.Close();
             }
