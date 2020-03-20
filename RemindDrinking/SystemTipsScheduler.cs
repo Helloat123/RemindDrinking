@@ -11,17 +11,28 @@ namespace RemindDrinking
     //https://github.com/fluentscheduler/FluentScheduler
     public class SystemTipsScheduler : Registry
     {
+        private SortedSet<Tuple<int, int>> ss = new SortedSet<Tuple<int, int>>();
         public SystemTipsScheduler(readsetting x)
         {
-
             foreach(var timedata in x.timelist)
             {
                 string[] times = timedata.Split(':');
                 int tclock,tminute;
                 int.TryParse(times[0], out tclock);
                 int.TryParse(times[1], out tminute);
-                Schedule(() => new ShowTipsMsgJob(1)).ToRunEvery(1).Days().At(tclock,tminute);
+                Tuple<int, int> temp = Tuple.Create(tclock,tminute);
+                if (ss.Contains(temp)) //这个时间已经激活过了
+                {
+                    //throw (new ArgumentException("666"));//debug
+                    saveLOG.perform("重复的时间");
+                }
+                else
+                {
+                    Schedule(() => new ShowTipsMsgJob(1)).ToRunEvery(1).Days().At(tclock, tminute);
+                    ss.Add(temp);
+                }
             }
+            saveLOG.perform("已添加各提醒");
             //Schedule a simple job to run at a specific time
             //Schedule(() => new ShowTipsMsgJob(1)).ToRunEvery(1).Days().At(9, 00);
             //Schedule(() => new ShowTipsMsgJob(2)).ToRunEvery(1).Days().At(10, 00);

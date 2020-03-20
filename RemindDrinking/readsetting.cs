@@ -11,10 +11,10 @@ namespace RemindDrinking
 {
 	public class readsetting
 	{
-        public List<string> timelist= new List<string> ();
-        //exe的路径
-        private String exePath = Application.StartupPath;
-        private int set_flag;
+        public List<string> timelist = new List<string> ();
+        //settings的路径
+        private String settingPath = System.Environment.GetFolderPath(Environment.SpecialFolder.Personal)+ @"\settings.txt";
+        private int set_flag=0;//是哪种操作 (目前只有time一个)
         private int dealtemp(string s)
         {
             if (s == "time") set_flag = 1;
@@ -22,20 +22,36 @@ namespace RemindDrinking
             {
                 if (set_flag == 1) timelist.Add(s.Substring(4));
             }
-            else if (s.Substring(0, 2) == "//") return 1;
-            else System.Console.WriteLine("INVALID COMMAND");
-            return 0;
+            else if (s.Substring(0, 2) == "//") return 1;//注释
+            else
+            {
+                System.Console.WriteLine("INVALID COMMAND");
+                return -1;//错误行
+            }
+            return 0;//正常处理
         }
         public void ReadSettings()
         {
-            if (!File.Exists(exePath + @"\settings.txt"))
+            if (!File.Exists(settingPath))
             {
                 //不存在
-                throw (new ArgumentException("设置文件不存在"));
+                //throw (new ArgumentException("设置文件不存在"));
+
+                MessageBoxButtons messButton = MessageBoxButtons.OKCancel;
+                DialogResult dr = MessageBox.Show("设置文件不存在,要自动建立吗？", "ERROR", messButton);
+                if (dr == DialogResult.OK)//如果点击“确定”按钮
+                {
+                    String Path1 = Application.StartupPath+@"\settings.txt";
+                    File.Copy(Path1,settingPath, true);
+                }
+                else//如果点击“取消”按钮
+                {
+                    System.Environment.Exit(0); 
+                }
             }
             int counter = 0;
             string line;
-            System.IO.StreamReader file = new System.IO.StreamReader(@"settings.txt");//DEBUG
+            System.IO.StreamReader file = new System.IO.StreamReader(settingPath);
             while ((line = file.ReadLine()) != null)
             {
                 System.Console.WriteLine(line);
@@ -58,6 +74,7 @@ namespace RemindDrinking
             }
             file.Close();
             System.Console.WriteLine("There were {0} lines.", counter);
+            saveLOG.perform("There were "+counter+ " lines in settings.");
         }
     }
 }

@@ -27,6 +27,7 @@ namespace RemindDrinking
 
         private void TipsForm_Load(object sender, EventArgs e)
         {
+            saveLOG.perform("TipsForm loaded");
             //定时关闭提示窗体任务 启动
             TmrBackHome.Start();
 
@@ -39,12 +40,14 @@ namespace RemindDrinking
 
             //获取 image文件夹下的文件名列表
             List<string> imgFile = GetImage();
+            
             //随机拿到一个图片
             string imgName = imgFile[rd.Next(imgFile.Count)];
-            this.Enabled = false;
+            saveLOG.perform("图片选中了" + imgName);
             this.BackgroundImage = Image.FromFile(imgPath + imgName);
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Enabled = true;
+            button1.Left = this.Width - button1.Width;
+            button1.Top = this.Height - button1.Height;
 
             LabMsg.Text = "喝水";
             //switch (showMod)
@@ -84,6 +87,7 @@ namespace RemindDrinking
         /// <returns></returns>
         private List<string> GetImage()
         {
+            int count=0;
             //相对路径，image文件夹内
             DirectoryInfo dir = new DirectoryInfo(imgPath);
 
@@ -92,7 +96,9 @@ namespace RemindDrinking
             foreach (FileInfo item in fileInfo)
             {
                 fileNames.Add(item.Name);
+                count++;
             }
+            saveLOG.perform("图片有"+count+"张");
             return fileNames;
         }
 
@@ -106,8 +112,15 @@ namespace RemindDrinking
             index++;
             if (index > 20)
             {
+                saveLOG.perform("时间到关闭");
                 this.Close();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            saveLOG.perform("按钮关闭");
+            this.Close();
         }
     }
 }
