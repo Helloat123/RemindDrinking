@@ -11,7 +11,7 @@ namespace RemindDrinking
 {
 	static class saveLOG
 	{
-		public static string logPath= Application.StartupPath+@"\log.txt";
+		public static string logPath= System.Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\RemindDrinking.log";
 		public static void perform(string s)
 		{
 			s=DateTime.Now.ToLocalTime().ToString()+" "+s;

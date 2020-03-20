@@ -15,6 +15,7 @@ namespace RemindDrinking
         [STAThread]
         static void Main()
         {
+            saveLOG.perform("start main");
             System.Threading.Mutex mutex = new System.Threading.Mutex(true, "RemindDrinking", out bool isRuned);
             if (isRuned)
             {
