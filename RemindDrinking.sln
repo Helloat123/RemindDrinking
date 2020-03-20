@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemindDrinking", "RemindDrinking\RemindDrinking.csproj", "{29BAEBAA-C5A7-4F30-A810-0D3CE8FC4931}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "RemDrinkSetup", "RemDrinkSetup\RemDrinkSetup.vdproj", "{F1F62FAB-6AD8-4A9C-9FDD-08B2BB1C4C93}"
-EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "RemindDrinkingSetup", "RemindDrinkingSetup\RemindDrinkingSetup.vdproj", "{64C788DA-E001-45B2-A7EB-1418798294F6}"
 EndProject
 Global
@@ -19,8 +17,6 @@ Global
 		{29BAEBAA-C5A7-4F30-A810-0D3CE8FC4931}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29BAEBAA-C5A7-4F30-A810-0D3CE8FC4931}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29BAEBAA-C5A7-4F30-A810-0D3CE8FC4931}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1F62FAB-6AD8-4A9C-9FDD-08B2BB1C4C93}.Debug|Any CPU.ActiveCfg = Debug
-		{F1F62FAB-6AD8-4A9C-9FDD-08B2BB1C4C93}.Release|Any CPU.ActiveCfg = Release
 		{64C788DA-E001-45B2-A7EB-1418798294F6}.Debug|Any CPU.ActiveCfg = Debug
 		{64C788DA-E001-45B2-A7EB-1418798294F6}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
